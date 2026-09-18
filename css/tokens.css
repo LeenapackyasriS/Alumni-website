@@ -1,0 +1,188 @@
+/* ==========================================================
+   Anna University, Trichy Alumni Portal
+   Design Tokens
+   ========================================================== */
+
+:root {
+
+  /* ==========================================================
+     COLORS
+     ========================================================== */
+
+  --primary-900: #6f0815;
+  --primary-800: #8f0c1d;
+  --primary-700: #ab0f23;
+  --primary-600: #c5162e;
+
+  --gold-500: #f2b233;
+  --gold-400: #f6c55c;
+  --gold-300: #f9d98a;
+
+  --text-primary: #24344d;
+  --text-secondary: #6d7b91;
+  --text-light: #9aa6b8;
+
+  --border-color: #dfe6ee;
+  --border-hover: #ccd6e2;
+
+  --surface: #ffffff;
+  --surface-soft: rgba(255,255,255,0.92);
+
+  --success: #198754;
+  --danger: #dc3545;
+  --warning: #ffc107;
+
+  --overlay: rgba(0,0,0,0.15);
+
+  /* ==========================================================
+     GRADIENTS
+     ========================================================== */
+
+  --primary-gradient:
+    linear-gradient(
+      135deg,
+      #8f0c1d 0%,
+      #ab0f23 50%,
+      #c5162e 100%
+    );
+
+  --gold-gradient:
+    linear-gradient(
+      135deg,
+      #f2b233 0%,
+      #f9d98a 100%
+    );
+
+  /* ==========================================================
+     TYPOGRAPHY
+     ========================================================== */
+
+  --font-heading:
+    "Playfair Display",
+    Georgia,
+    serif;
+
+  --font-body:
+    "Inter",
+    "Segoe UI",
+    sans-serif;
+
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 22px;
+  --text-2xl: 28px;
+  --text-3xl: 42px;
+
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+
+  --line-height: 1.5;
+
+  /* ==========================================================
+     SPACING
+     ========================================================== */
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 28px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+
+  /* ==========================================================
+     BORDER RADIUS
+     ========================================================== */
+
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+
+  /* ==========================================================
+     SHADOWS
+     ========================================================== */
+
+  --shadow-card:
+    0 25px 60px rgba(0,0,0,0.18);
+
+  --shadow-soft:
+    0 8px 24px rgba(0,0,0,0.08);
+
+  --shadow-button:
+    0 10px 24px rgba(171,15,35,0.28);
+
+  /* ==========================================================
+     TRANSITIONS
+     ========================================================== */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  /* ==========================================================
+   LAYOUT
+   ========================================================== */
+
+--auth-card-width: 520px;
+--login-card-width: 460px;
+
+--field-height: 48px;
+
+  /* ==========================================================
+     BACKGROUND IMAGE
+     Replace with your own image later
+     ========================================================== */
+
+  --auth-bg-image:
+    url("../assets/campus-bg.png");
+}
+
+
+/* ==========================================================
+   RESET
+   ========================================================== */
+
+*,
+*::before,
+*::after{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:var(--font-body);
+  color:var(--text-primary);
+  line-height:var(--line-height);
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+button,
+input,
+select{
+  font:inherit;
+}
+
+a{
+  text-decoration:none;
+}
+
+ul{
+  list-style:none;
+}
