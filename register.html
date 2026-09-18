@@ -1,0 +1,1029 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Register | Anna University, Trichy Alumni Portal
+    </title>
+
+
+    <!-- ==================================================
+         GOOGLE FONTS
+         ================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+
+    <!-- ==================================================
+         CSS
+         ================================================== -->
+
+    <link rel="stylesheet" href="css/tokens.css">
+
+    <link rel="stylesheet" href="css/auth.css">
+
+</head>
+
+
+<body>
+
+
+<main class="auth-page">
+
+
+    <!-- ==================================================
+         REGISTER CARD
+         ================================================== -->
+
+    <section class="auth-card register-card">
+
+
+        <!-- ==================================================
+             HEADER
+             ================================================== -->
+
+        <div class="auth-header">
+
+            <img
+                src="assets/logo.png"
+                alt="Anna University Logo"
+                class="auth-logo"
+            >
+
+            <h1 class="auth-title">
+                Anna University, Trichy
+            </h1>
+
+            <div class="auth-subtitle">
+                Alumni Portal
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             STEP INDICATOR
+             ================================================== -->
+
+        <div class="register-steps">
+
+
+            <!-- STEP 1 -->
+
+            <div
+                class="step-item active"
+                data-step-indicator="1"
+            >
+
+                <span>1</span>
+
+                <small>
+                    Personal
+                </small>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <!-- STEP 2 -->
+
+            <div
+                class="step-item"
+                data-step-indicator="2"
+            >
+
+                <span>2</span>
+
+                <small>
+                    Education
+                </small>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <!-- STEP 3 -->
+
+            <div
+                class="step-item"
+                data-step-indicator="3"
+            >
+
+                <span>3</span>
+
+                <small>
+                    Password
+                </small>
+
+            </div>
+
+
+            <div class="step-line"></div>
+
+
+            <!-- STEP 4 -->
+
+            <div
+                class="step-item"
+                data-step-indicator="4"
+            >
+
+                <span>4</span>
+
+                <small>
+                    Verify
+                </small>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             REGISTER FORM
+             ================================================== -->
+
+        <form
+            id="registerForm"
+            class="auth-form"
+            novalidate
+        >
+
+
+            <!-- ==================================================
+                 STEP 1
+                 PERSONAL DETAILS
+                 ================================================== -->
+
+            <div
+                class="register-step active"
+                data-step="1"
+            >
+
+                <h2 class="step-title">
+                    Personal Details
+                </h2>
+
+                <p class="step-description">
+                    Enter your basic personal information
+                </p>
+
+
+                <!-- ==================================================
+                     FIRST NAME / LAST NAME
+                     ================================================== -->
+
+                <div class="form-row">
+
+
+                    <!-- FIRST NAME -->
+
+                    <div class="field">
+
+                        <input
+                            type="text"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="First Name *"
+                            autocomplete="given-name"
+                            required
+                        >
+
+                        <div class="field-hint"></div>
+
+                    </div>
+
+
+                    <!-- LAST NAME -->
+
+                    <div class="field">
+
+                        <input
+                            type="text"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Last Name *"
+                            autocomplete="family-name"
+                            required
+                        >
+
+                        <div class="field-hint"></div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==================================================
+                     EMAIL
+                     ================================================== -->
+
+                <div class="field">
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email Address *"
+                        autocomplete="email"
+                        required
+                    >
+
+                    <div class="field-hint"></div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     MOBILE / DATE OF BIRTH
+                     SAME ROW
+                     ================================================== -->
+
+                <div class="form-row">
+
+
+                    <!-- MOBILE -->
+
+                    <div class="field">
+
+                        <input
+                            type="tel"
+                            id="mobile"
+                            name="mobile"
+                            placeholder="Mobile Number *"
+                            autocomplete="tel"
+                            inputmode="numeric"
+                            maxlength="10"
+                            required
+                        >
+
+                        <div class="field-hint"></div>
+
+                    </div>
+
+
+                    <!-- DATE OF BIRTH -->
+
+                    <div class="field">
+
+                        <input
+                            type="text"
+                            id="dob"
+                            name="dob"
+                            placeholder="Date of Birth *"
+                            autocomplete="bday"
+                            required
+                        >
+
+                        <div class="field-hint"></div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==================================================
+                     NEXT
+                     ================================================== -->
+
+                <button
+                    type="button"
+                    class="btn-primary next-step"
+                    data-next="2"
+                >
+                    Next
+                </button>
+
+            </div>
+
+
+            <!-- ==================================================
+                 STEP 2
+                 EDUCATION DETAILS
+                 ================================================== -->
+
+            <div
+                class="register-step"
+                data-step="2"
+            >
+
+                <h2 class="step-title">
+                    Education Details
+                </h2>
+
+                <p class="step-description">
+                    Enter your academic information
+                </p>
+
+
+                <!-- ==================================================
+                     GRADUATION YEAR
+                     ================================================== -->
+
+                <div class="field">
+
+                    <select
+                        id="graduationYear"
+                        name="graduationYear"
+                        required
+                    >
+
+                        <option value="">
+                            Graduation Year *
+                        </option>
+
+                        <option value="2026">
+                            2026
+                        </option>
+
+                        <option value="2025">
+                            2025
+                        </option>
+
+                        <option value="2024">
+                            2024
+                        </option>
+
+                        <option value="2023">
+                            2023
+                        </option>
+
+                        <option value="2022">
+                            2022
+                        </option>
+
+                        <option value="2021">
+                            2021
+                        </option>
+
+                        <option value="2020">
+                            2020
+                        </option>
+
+                        <option value="2019">
+                            2019
+                        </option>
+
+                        <option value="2018">
+                            2018
+                        </option>
+
+                        <option value="2017">
+                            2017
+                        </option>
+
+                        <option value="2016">
+                            2016
+                        </option>
+
+                        <option value="2015">
+                            2015
+                        </option>
+
+                    </select>
+
+                    <div class="field-hint"></div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     DEPARTMENT
+                     ================================================== -->
+
+                <div class="field">
+
+                    <select
+                        id="department"
+                        name="department"
+                        required
+                    >
+
+                        <option value="">
+                            Select Department *
+                        </option>
+
+                        <option value="CSE">
+                            CSE
+                        </option>
+
+                        <option value="IT">
+                            IT
+                        </option>
+
+                        <option value="ECE">
+                            ECE
+                        </option>
+
+                        <option value="EEE">
+                            EEE
+                        </option>
+
+                        <option value="Mechanical Engineering">
+                            Mechanical Engineering
+                        </option>
+
+                        <option value="Civil Engineering">
+                            Civil Engineering
+                        </option>
+
+                        <option value="Production Engineering">
+                            Production Engineering
+                        </option>
+
+                        <option value="Architecture">
+                            Architecture
+                        </option>
+
+                        <option value="MBA">
+                            MBA
+                        </option>
+
+                        <option value="MCA">
+                            MCA
+                        </option>
+
+                    </select>
+
+                    <div class="field-hint"></div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     DEGREE
+                     ================================================== -->
+
+                <div class="field">
+
+                    <select
+                        id="degree"
+                        name="degree"
+                        required
+                    >
+
+                        <option value="">
+                            Select Degree *
+                        </option>
+
+                        <option value="B.E">
+                            B.E
+                        </option>
+
+                        <option value="B.Tech">
+                            B.Tech
+                        </option>
+
+                        <option value="M.E">
+                            M.E
+                        </option>
+
+                        <option value="M.Tech">
+                            M.Tech
+                        </option>
+
+                        <option value="MBA">
+                            MBA
+                        </option>
+
+                        <option value="MCA">
+                            MCA
+                        </option>
+
+                        <option value="B.Arch">
+                            B.Arch
+                        </option>
+
+                    </select>
+
+                    <div class="field-hint"></div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     BUTTONS
+                     ================================================== -->
+
+                <div class="step-buttons">
+
+
+                    <button
+                        type="button"
+                        class="btn-back prev-step"
+                        data-prev="1"
+                    >
+                        Back
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn-primary next-step"
+                        data-next="3"
+                    >
+                        Next
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 STEP 3
+                 PASSWORD
+                 ================================================== -->
+
+            <div
+                class="register-step"
+                data-step="3"
+            >
+
+                <h2 class="step-title">
+                    Create Password
+                </h2>
+
+                <p class="step-description">
+                    Create a secure password for your account
+                </p>
+
+
+                <!-- ==================================================
+                     PASSWORD
+                     ================================================== -->
+
+                <div class="field">
+
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password *"
+                        autocomplete="new-password"
+                        required
+                    >
+
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="password"
+                        aria-label="Show password"
+                    >
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+
+                            <path
+                                stroke-width="2"
+                                d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                            />
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="3"
+                                stroke-width="2"
+                            />
+
+                        </svg>
+
+                    </button>
+
+
+                    <div class="field-hint"></div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     CONFIRM PASSWORD
+                     ================================================== -->
+
+                <div class="field">
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        name="confirmPassword"
+                        placeholder="Confirm Password *"
+                        autocomplete="new-password"
+                        required
+                    >
+
+
+                    <button
+                        type="button"
+                        class="password-toggle"
+                        data-target="confirmPassword"
+                        aria-label="Show password"
+                    >
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+
+                            <path
+                                stroke-width="2"
+                                d="M1 12s4-7 11-7 11 7 11 7-4 7-11 7S1 12 1 12z"
+                            />
+
+                            <circle
+                                cx="12"
+                                cy="12"
+                                r="3"
+                                stroke-width="2"
+                            />
+
+                        </svg>
+
+                    </button>
+
+
+                    <div class="field-hint"></div>
+
+                </div>
+
+
+                <!-- ==================================================
+                     PASSWORD INFO
+                     ================================================== -->
+
+                <div class="password-info">
+
+                    Use at least 8 characters with letters and numbers.
+
+                </div>
+
+
+                <!-- ==================================================
+                     TERMS
+                     ================================================== -->
+
+                <label class="checkbox-row">
+
+                    <input
+                        type="checkbox"
+                        id="terms"
+                        name="terms"
+                        required
+                    >
+
+                    <span>
+
+                        I agree to the
+
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+
+                    </span>
+
+                </label>
+
+
+                <!-- ==================================================
+                     BUTTONS
+                     ================================================== -->
+
+                <div class="step-buttons">
+
+
+                    <button
+                        type="button"
+                        class="btn-back prev-step"
+                        data-prev="2"
+                    >
+                        Back
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="btn-primary next-step"
+                        data-next="4"
+                    >
+                        Next
+                    </button>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 STEP 4
+                 EMAIL OTP
+                 ================================================== -->
+
+            <div
+                class="register-step"
+                data-step="4"
+            >
+
+
+                <h2 class="step-title">
+                    Verify Your Email
+                </h2>
+
+
+                <p class="step-description">
+                    We have sent a 6-digit verification code to your email.
+                </p>
+
+
+                <!-- ==================================================
+                     EMAIL INFORMATION
+                     ================================================== -->
+
+                <div class="otp-email-box">
+
+
+                    <div class="otp-email-icon">
+
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                        >
+
+                            <path
+                                stroke-width="2"
+                                d="M3 8l9 6 9-6M5 5h14a2 2 0 012 2v10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z"
+                            />
+
+                        </svg>
+
+                    </div>
+
+
+                    <div class="otp-email-content">
+
+                        <span>
+                            Verification code sent to
+                        </span>
+
+                        <strong id="otpEmail">
+                            your@email.com
+                        </strong>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- ==================================================
+                     OTP LABEL
+                     ================================================== -->
+
+                <label
+                    for="otp1"
+                    class="otp-label"
+                >
+                    Enter 6-digit OTP
+                </label>
+
+
+                <!-- ==================================================
+                     OTP INPUTS
+                     ================================================== -->
+
+                <div class="otp-inputs">
+
+
+                    <input
+                        type="text"
+                        id="otp1"
+                        class="otp-box"
+                        maxlength="1"
+                        inputmode="numeric"
+                        autocomplete="one-time-code"
+                        aria-label="OTP digit 1"
+                    >
+
+
+                    <input
+                        type="text"
+                        id="otp2"
+                        class="otp-box"
+                        maxlength="1"
+                        inputmode="numeric"
+                        aria-label="OTP digit 2"
+                    >
+
+
+                    <input
+                        type="text"
+                        id="otp3"
+                        class="otp-box"
+                        maxlength="1"
+                        inputmode="numeric"
+                        aria-label="OTP digit 3"
+                    >
+
+
+                    <input
+                        type="text"
+                        id="otp4"
+                        class="otp-box"
+                        maxlength="1"
+                        inputmode="numeric"
+                        aria-label="OTP digit 4"
+                    >
+
+
+                    <input
+                        type="text"
+                        id="otp5"
+                        class="otp-box"
+                        maxlength="1"
+                        inputmode="numeric"
+                        aria-label="OTP digit 5"
+                    >
+
+
+                    <input
+                        type="text"
+                        id="otp6"
+                        class="otp-box"
+                        maxlength="1"
+                        inputmode="numeric"
+                        aria-label="OTP digit 6"
+                    >
+
+
+                </div>
+
+
+                <!-- ==================================================
+                     HIDDEN COMBINED OTP
+                     ================================================== -->
+
+                <input
+                    type="hidden"
+                    id="otp"
+                    name="otp"
+                >
+
+
+                <!-- ==================================================
+                     OTP STATUS
+                     ================================================== -->
+
+                <div
+                    id="otpMessage"
+                    class="otp-status"
+                    aria-live="polite"
+                ></div>
+
+
+                <!-- ==================================================
+                     RESEND OTP
+                     ================================================== -->
+
+                <div class="otp-resend">
+
+
+                    <button
+                        type="button"
+                        id="resendOtpBtn"
+                        disabled
+                    >
+
+                        Resend OTP
+
+                        <span id="otpTimer">
+                            05:00
+                        </span>
+
+                    </button>
+
+
+                </div>
+
+
+            <div class="otp-action-buttons">
+
+    <button
+        type="button"
+        id="otpBackBtn"
+        class="btn-back"
+    >
+        Back
+    </button>
+
+    <button
+        type="button"
+        id="verifyOtpBtn"
+        class="btn-primary otp-verify-btn"
+    >
+        Verify & Complete Registration
+    </button>
+
+</div>
+
+            </div>
+
+
+        </form>
+
+
+        <!-- ==================================================
+             FOOTER
+             ================================================== -->
+
+        <div class="auth-footer">
+
+            Already have an account?
+
+            <a href="index.html">
+                Login
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+</main>
+
+
+<!-- ==========================================================
+     JAVASCRIPT
+     ========================================================== -->
+
+<script src="js/auth.js"></script>
+
+<script src="js/register.js"></script>
+
+
+<!-- ==========================================================
+     DATE OF BIRTH PLACEHOLDER / DATE PICKER
+     ========================================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const dob = document.getElementById("dob");
+
+    if (!dob) return;
+
+
+    dob.addEventListener("focus", function () {
+
+        dob.type = "date";
+
+    });
+
+
+    dob.addEventListener("blur", function () {
+
+        if (!dob.value) {
+
+            dob.type = "text";
+
+        }
+
+    });
+
+});
+
+</script>
+
+
+</body>
+
+</html>
